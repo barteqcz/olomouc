@@ -59,6 +59,16 @@ section {
     overflow: hidden;
     align-items: center;
 }
+
+#vystavba {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 105px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #imageText {
     justify-content: center;
 }
