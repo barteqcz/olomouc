@@ -154,6 +154,10 @@ hr.solid {
     text-align: center;
 }
 
+.space-20px {
+    width: 20px;
+}
+
 .fade-in {
     opacity: 0; /* Set initial opacity to 0 */
     animation: fadeIn 0.5s ease-in forwards; /* Apply animation */
