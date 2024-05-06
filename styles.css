@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Jaro:opsz@6..72&display=swap');
+
+body {
+    margin: 35px 40px 35px 40px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 154px;
+}
+
+main {
+    margin-top: 35px;
+}
+
+.headerBox {
+    background-color: #d54334;
+    width: 100%;
+    height: 154px;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-desktop {
+    margin-left: 40px;
+    display: flex;
+}
+
+.menu-desktop a {
+    font-family: "Epilogue";
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+
+.menu-desktop a:last-child {
+    margin-right: 0;
+}
+
+#sectionNumber1 {
+    width: 100%;
+    height: calc(100vh - 259px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.heading {
+    color: white;
+    font-size: 80px;
+    font-family: "Epilogue";
+    position: absolute;
+    left: 40px;
+    top: 25%;
+}
+
+.mainPng {
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(40%);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    justify-content: right;
+    margin-right: 40px;
+}
