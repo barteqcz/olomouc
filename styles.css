@@ -63,7 +63,7 @@ section {
 #vystavba {
     display: flex;
     width: 100%;
-    height: calc(100vh - 189px);
+    height: calc(100vh - 259px);
     justify-content: center;
     align-items: center;
     flex-direction: column;
