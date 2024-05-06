@@ -11,9 +11,6 @@ function submitter() {
     templateContent.querySelector("#articleTitle").textContent = title;
     templateContent.querySelector("#articleContent").textContent = content;
 
-    // Set the src attribute of the image element
-    templateContent.querySelector("#articleImage").src = image;
-
     // Convert template content to string
     var htmlString = new XMLSerializer().serializeToString(templateContent);
 
