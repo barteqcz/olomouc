@@ -10,7 +10,9 @@ function submitter() {
     // Fill in template with form data
     templateContent.querySelector("#articleTitle").textContent = title;
     templateContent.querySelector("#articleContent").textContent = content;
-    templateContent.querySelector("#articleImage").textContent = content;
+
+    // Set the src attribute of the image element
+    templateContent.querySelector("#articleImage").src = image;
 
     // Convert template content to string
     var htmlString = new XMLSerializer().serializeToString(templateContent);
