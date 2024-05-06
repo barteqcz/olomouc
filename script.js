@@ -2,6 +2,7 @@ function submitter() {
     // Get form inputs
     var title = document.getElementById("input-text-title").value;
     var content = document.getElementById("input-text-content").value;
+    var image = document.getElementById("input-image").value;
 
     // Clone template content
     var templateContent = document.getElementById("articleTemplate").content.cloneNode(true);
@@ -9,6 +10,7 @@ function submitter() {
     // Fill in template with form data
     templateContent.querySelector("#articleTitle").textContent = title;
     templateContent.querySelector("#articleContent").textContent = content;
+    templateContent.querySelector("#articleImage").textContent = content;
 
     // Convert template content to string
     var htmlString = new XMLSerializer().serializeToString(templateContent);
