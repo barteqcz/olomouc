@@ -228,13 +228,22 @@ section {
     font-weight: bold;
 }
 
-.flag-cz {
+.flag-sm-cz {
     background-image: url('flags-16.png');
     display: inline-block;
     width: 24px;
     height: 16px;
     line-height: 16px;
     background-position: -120px -96px;
+}
+
+.flag-md-cz {
+  background-image: url('images/sprites/flags-47.png');
+  display: inline-block;
+  width: 70px;
+  height: 47px;
+  line-height: 47px;
+  background-position: -350px -282px;
 }
 
 .fade-in {
