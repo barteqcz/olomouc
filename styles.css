@@ -228,24 +228,6 @@ section {
     font-weight: bold;
 }
 
-.flag-sm-cz {
-    background-image: url('imgs/flags-16.png');
-    display: inline-block;
-    width: 24px;
-    height: 16px;
-    line-height: 16px;
-    background-position: -120px -96px;
-}
-
-.flag-md-cz {
-  background-image: url('imgs/flags-47.png');
-  display: inline-block;
-  width: 70px;
-  height: 47px;
-  line-height: 47px;
-  background-position: -350px -282px;
-}
-
 .fade-in {
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
