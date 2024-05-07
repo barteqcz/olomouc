@@ -20,7 +20,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    min-height: calc(100vh - 259px)
 }
 
 .headerBox {
@@ -124,6 +124,20 @@ section {
     margin-right: 40px;
 }
 
+.left2 {
+    display: flex;
+    width: 63%;
+    flex-direction: column;
+}
+
+.right2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+}
+
 hr.solid {
     border: 1px solid #9c9c9c;
     width: 90%;
@@ -150,28 +164,88 @@ hr.solid {
     flex-direction: column;
 }
 
-#input-text-title {
-    border: 1px solid black;
-    padding: 10px;
-}
-
-#input-text-content {
-    border: 1px solid black;
-    padding: 10px;
-    height: 60vh;
-}
-
-#article {
-    display: flex;
-    flex-direction: column;
-}
-
 .txtalcen {
     text-align: center;
 }
 
 .space-20px {
     width: 20px;
+}
+
+.vl {
+    border-left: 1px solid #9c9c9c;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.imageGallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.imageGallerySlides {
+    position: relative;
+}
+
+.numbertext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 16px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
 }
 
 .fade-in {
