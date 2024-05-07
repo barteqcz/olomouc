@@ -229,7 +229,7 @@ section {
 }
 
 .flag-sm-cz {
-    background-image: url('flags-16.png');
+    background-image: url('imgs/flags-16.png');
     display: inline-block;
     width: 24px;
     height: 16px;
@@ -238,7 +238,7 @@ section {
 }
 
 .flag-md-cz {
-  background-image: url('images/sprites/flags-47.png');
+  background-image: url('imgs/flags-47.png');
   display: inline-block;
   width: 70px;
   height: 47px;
