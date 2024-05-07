@@ -1,24 +1,33 @@
-function submitter() {
-    // Get form inputs
-    var title = document.getElementById("input-text-title").value;
-    var content = document.getElementById("input-text-content").value;
+document.addEventListener("DOMContentLoaded", function() {
+    currentSlide(1)
+});
 
-    // Clone template content
-    var templateContent = document.getElementById("articleTemplate").content.cloneNode(true);
 
-    // Fill in template with form data
-    templateContent.querySelector("#articleTitle").textContent = title;
-    templateContent.querySelector("#articleContent").textContent = content;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-    // Convert template content to string
-    var htmlString = new XMLSerializer().serializeToString(templateContent);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-    // Create Blob from HTML string
-    var blob = new Blob([htmlString], { type: 'text/html' });
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-    // Create a temporary link element
-    var link = document.createElement('a');
-    link.download = 'clanek.html'; // Set the download filename
-    link.href = window.URL.createObjectURL(blob); // Set the link URL to the Blob object
-    link.click(); // Simulate a click on the link to trigger the download
+function showSlides(n) {
+    let slides = document.getElementsByClassName("imageGallerySlides");
+    let dots = document.getElementsByClassName("demo");
+    if (slides.length === 0) {
+        return; // Exit the function if there are no slides
+    }
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
 }
