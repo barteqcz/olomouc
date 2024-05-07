@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     currentSlide(1);
-    displayStatus("vmo", "status-info-vmo");
-    displayStatus("zoo", "status-info-zoo");
+    checkAndDisplayStatus("vmo", "status-info-vmo");
+    checkAndDisplayStatus("zoo", "status-info-zoo");
 });
 
 let slideIndex = 1;
@@ -55,5 +55,18 @@ function displayStatus(place, elementId) {
     } else {
         statusInfo.textContent = "Uzavřeno";
         statusInfo.style.color = 'red';
+    }
+}
+
+function checkAndDisplayStatus(place, elementId) {
+    let statusInfo = document.getElementById(elementId);
+    if (statusInfo) {
+        // If element exists, call displayStatus immediately
+        displayStatus(place, elementId);
+    } else {
+        // If element doesn't exist yet, try again after a short delay
+        setTimeout(function() {
+            checkAndDisplayStatus(place, elementId);
+        }, 100);
     }
 }
