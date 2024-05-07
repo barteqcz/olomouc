@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    currentSlide(1)
+    currentSlide(1);
 });
 
 
