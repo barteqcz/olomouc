@@ -47,6 +47,8 @@ function displayStatus(place, elementId) {
     let isOpenNow = isOpen(place);
     let statusInfo = document.getElementById(elementId);
 
+    console.log(statusInfo)
+
     if (isOpenNow) {
         statusInfo.textContent = 'Otevřeno';
         statusInfo.style.color = 'green';
