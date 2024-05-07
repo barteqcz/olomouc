@@ -138,13 +138,6 @@ section {
     width: 33%;
 }
 
-hr.solid {
-    border: 1px solid #9c9c9c;
-    width: 90%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .positionBox {
     display: flex;
     width: 90%;
@@ -178,11 +171,13 @@ hr.solid {
     margin-right: 3%;
 }
 
-* {
-    box-sizing: border-box;
+.vh {
+    border-top: 1px solid #9c9c9c;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 80%;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
 .imageGallery {
     position: relative;
     display: flex;
@@ -203,7 +198,6 @@ hr.solid {
     font-weight: bold;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -217,19 +211,16 @@ hr.solid {
     -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -237,20 +228,9 @@ hr.solid {
     font-weight: bold;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
 .fade-in {
-    opacity: 0; /* Set initial opacity to 0 */
-    animation: fadeIn 0.5s ease-in forwards; /* Apply animation */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
 }
 
 @keyframes fadeIn {
