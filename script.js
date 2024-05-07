@@ -50,10 +50,10 @@ function displayStatus(place, elementId) {
     console.log(statusInfo)
 
     if (isOpenNow) {
-        statusInfo.textContent = 'Otevřeno';
+        statusInfo.textContent = 'Právě otevřeno';
         statusInfo.style.color = 'green';
     } else {
-        statusInfo.textContent = "Uzavřeno";
+        statusInfo.textContent = "Právě uzavřeno";
         statusInfo.style.color = 'red';
     }
 }
