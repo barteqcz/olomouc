@@ -70,3 +70,22 @@ function checkAndDisplayStatus(place, elementId) {
         }, 100);
     }
 }
+
+function hamburgerMenu(elementId) {
+    let x = document.getElementById("myLinks");
+    let y = document.getElementById(elementId)
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+        y.style.marginTop = "0";
+    } else {
+        x.style.display = "flex";
+        y.style.marginTop = "35px";
+    }
+}
+
+function hamburgerMenuHideOnly(elementId) {
+    let x = document.getElementById("myLinks");
+    let y = document.getElementById(elementId)
+    x.style.display = "none";
+    y.style.marginTop = "20px";
+}
