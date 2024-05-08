@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
-h1, h2, h3, h4, p {
+h1, h2, p {
     margin: 10px;
 }
 
@@ -66,18 +66,6 @@ section {
 
 #imageText {
     justify-content: center;
-}
-
-.imageTextImage {
-    width: 100%;
-}
-
-.imageTextImage img {
-    width: 100%;
-}
-
-.imageTextText {
-    width: 100%;
 }
 
 #list {
@@ -160,20 +148,6 @@ section {
     margin-right: 40px;
 }
 
-.left2 {
-    display: flex;
-    width: 63%;
-    flex-direction: column;
-}
-
-.right2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 33%;
-}
-
 .positionBox {
     display: flex;
     width: 90%;
@@ -201,65 +175,9 @@ section {
     width: 20px;
 }
 
-.vl {
-    border-left: 1px solid #9c9c9c;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
 .vh {
     border-top: 1px solid #9c9c9c;
     width: 100%;
-}
-
-.imageGallery {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.imageGallerySlides {
-    position: relative;
-}
-
-.numbertext {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 8px 16px;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    font-weight: bold;
 }
 
 .flag-sm-cz {
@@ -269,15 +187,6 @@ section {
     height: 16px;
     line-height: 16px;
     background-position: -120px -96px;
-}
-
-.flag-md-cz {
-  background-image: url('imgs/flags-47.png');
-  display: inline-block;
-  width: 70px;
-  height: 47px;
-  line-height: 47px;
-  background-position: -350px -282px;
 }
 
 .pointer {
@@ -317,15 +226,6 @@ section {
 .fade-in2 {
     opacity: 0; /* Set initial opacity to 0 */
     animation: fadeIn 1s ease-in forwards; /* Apply animation */
-}
-
-@keyframes fadeIn2 {
-    from {
-        opacity: 0; /* Start opacity */
-    }
-    to {
-        opacity: 1; /* End opacity */
-    }
 }
 
 @media only screen and (max-width: 869px) {
@@ -414,10 +314,6 @@ section {
         align-items: center;
         width: 100%;
         height: 61px;
-    }
-
-    #place {
-        flex-direction: column;
     }
 }
 
