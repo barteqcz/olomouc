@@ -441,6 +441,10 @@ section {
     .vh {
         width: 80%;
     }
+
+    .heading {
+        font-size: 40px;
+    }
 }
 
 
