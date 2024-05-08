@@ -10,17 +10,19 @@
     <meta property="og:site_name" content="Olomouc">
     <meta property="og:title" content="Olomouc">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <title>O městě | Neoficiální stránky statutárního města Olomouc</title>
 </head>
 <body class="fade-in">
     <header>
-        <a href="index.html"><img src="imgs/logo.jpg" width="297px" height="154px"></a>
+        <a href="index.html"><img class="logo" src="imgs/logo.jpg"></a>
         <div class="headerBox">
             <div class="left">
                 <nav class="menu-desktop">
                     <a href="o-meste.html"><b>O městě</b></a>
                     <a href="kam-na-vylet.html"><b>Kam na výlet</b></a>
                 </nav>
+                <nav class="menu-mobile"><i class="fa fa-bars menu-mobile-icon" onclick="hamburgerMenu('imageText')"></i></nav>
             </div>
             <div class="right">
                 <a href="https://twitter.com/mesto_olomouc" target="_blank"><img src="imgs/x.svg" width="50px" height="50px"></a><div class="space-20px"></div>
@@ -30,7 +32,11 @@
             </div>
         </div>
     </header>
-    <main style="align-items: center;">
+    <main>
+        <div id="myLinks" onclick="hamburgerMenu('imageText')">
+            <div class="myLinksPosition" style="margin-bottom: 20px;"><a style="color: white; text-decoration: none;" href="o-meste.html"><b>O městě</b></a></div>
+            <div class="myLinksPosition"><a style="color: white; text-decoration: none;" href="kam-na-vylet.html"><b>Kam na výlet</b></a></div>
+        </div>
         <section id="imageText">
             <div class="image">
                 <img src="imgs/ol1.jpg">
