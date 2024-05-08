@@ -426,6 +426,10 @@ section {
     .desktop-hide {
         display: none;
     }
+
+    .vh-container {
+        width: 80%;
+    }
 }
 
 
@@ -448,5 +452,9 @@ section {
 
     #imageText {
         align-items: center;
+    }
+
+    .vh-container {
+        width: 80%;
     }
 }
