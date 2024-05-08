@@ -23,6 +23,10 @@ main {
     min-height: calc(100vh - 259px)
 }
 
+.logo {
+    height: 154px;
+}
+
 .headerBox {
     background-color: #d54334;
     width: 100%;
@@ -60,17 +64,20 @@ section {
     align-items: center;
 }
 
-#vystavba {
-    display: flex;
-    width: 100%;
-    height: calc(100vh - 259px);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 #imageText {
     justify-content: center;
+}
+
+.imageTextImage {
+    width: 100%;
+}
+
+.imageTextImage img {
+    width: 100%;
+}
+
+.imageTextText {
+    width: 100%;
 }
 
 #list {
@@ -100,6 +107,35 @@ section {
     font-size: 80px;
     position: absolute;
     left: 40px;
+}
+
+#myLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myLinks a {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#myLinks a:last-child {
+    margin-bottom: 0;
+}
+
+.myLinksPosition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #d54334;
+}
+
+.menu-mobile {
+    font-size: 36px;
+    color: white;
 }
 
 .mainPng {
@@ -143,7 +179,7 @@ section {
     width: 90%;
     border: 1px solid #9c9c9c;
     height: 120px;
-    padding: 10px;
+    padding: 20px;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -173,9 +209,7 @@ section {
 
 .vh {
     border-top: 1px solid #9c9c9c;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 80%;
+    width: 100%;
 }
 
 .imageGallery {
@@ -246,6 +280,26 @@ section {
   background-position: -350px -282px;
 }
 
+.pointer {
+    font-size: 48px;
+    color: black;
+}
+
+.statusInformator {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.photo {
+    height: 120px;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .fade-in {
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
@@ -271,5 +325,119 @@ section {
     }
     to {
         opacity: 1; /* End opacity */
+    }
+}
+
+@media only screen and (max-width: 869px) {
+    body {
+        margin: 35px 30px 35px 30px;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        height: 104px;
+        margin-bottom: 35px;
+    }
+
+    .logo {
+        height: 104px;
+    }
+
+    .headerBox {
+        background-color: #d54334;
+        width: 100%;
+        height: 104px;
+        margin-left: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .desc {
+        font-size: 14px;
+        margin-left: 0;
+        margin-right: 10px;
+        width: 90%;
+    }
+
+    .pointer {
+         font-size: 24px;
+         color: black;
+         margin-right: 20px;
+    }
+
+    .statusInformator {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #sectionNumber1 {
+        background-size: cover;
+    }
+
+    .mainPng {
+        width: 100%;
+        height: 100%;
+        filter: brightness(40%);
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    #imageText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vh-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 61px;
+    }
+
+    #place {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 870px) {
+    .menu-desktop {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1050px) {
+    .right {
+        display: flex;
     }
 }
