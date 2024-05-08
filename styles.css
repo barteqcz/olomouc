@@ -195,6 +195,13 @@ section {
     margin-right: 3%;
 }
 
+.vh-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 61px;
+}
+
 .vh {
     border-top: 1px solid #9c9c9c;
     width: 100%;
@@ -377,13 +384,6 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .vh-container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 61px;
     }
 
     #place {
