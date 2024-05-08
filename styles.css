@@ -279,12 +279,12 @@ section {
 
 .photo {
     height: 120px;
+    width: 220px;
 }
 
 .photo img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
 }
 
 .fade-in {
