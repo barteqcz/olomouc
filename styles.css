@@ -406,6 +406,14 @@ section {
         flex-direction: column;
     }
 
+    .left2 {
+        width: 100%;
+    }
+
+    .right2 {
+        width: 100%;
+    }
+
     .mobile-hide {
         display: none;
     }
