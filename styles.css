@@ -396,6 +396,7 @@ section {
 
     #place {
         flex-direction: column;
+        margin-top: 35px;
     }
 
     .left2 {
